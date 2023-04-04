@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "../dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "paths": {
+      "#lib/*": ["lib/*"],
+      "#handlers/*": ["lib/handlers/*"],
+      "#controllers/*": ["lib/handlers/controllers/*"],
+      "#models/*": ["lib/models/*"],
+      "#types/*": ["lib/types/*"],
+      "#utils/*": ["lib/utils/*"],
+      "#root/*": ["*"]
+    },
+    "composite": true,
+  },
+  "include": [".", "./**/*.json"],
+  "exclude": ["./tsconfig.json"]
+}
